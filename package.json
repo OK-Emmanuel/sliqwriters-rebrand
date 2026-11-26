@@ -1,0 +1,41 @@
+{
+  "name": "sliqwriters-rebrand",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "dev:local": "node scripts/dev-local.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "backend:migrate": "node scripts/backend.mjs migrate",
+    "backend:serve": "node scripts/backend.mjs serve",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.mjs\" \"tests/*.mjs\" next.config.ts",
+    "typecheck": "tsc --noEmit",
+    "content:import": "node scripts/import-content.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "@fontsource-variable/manrope": "^5.2.8",
+    "react-markdown": "^10.1.0",
+    "sanitize-html": "^2.17.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/sanitize-html": "^2.16.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
+  }
+}
